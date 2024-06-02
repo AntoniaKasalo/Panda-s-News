@@ -1,0 +1,240 @@
+body {
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-style:normal;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url('Slike/pandaa.jpg') no-repeat center center/cover;
+    transition: opacity 0.5s ease-in-out; /* Dodajte tranziciju za promjenu prozirnosti */
+    opacity: 1;
+}
+
+.header-content {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #5f694b;
+    height: auto;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f7ec8d;
+    text-decoration: underline;
+}
+
+.nav-item {
+    border-right: solid 1px #494e3f;
+    text-shadow: 2px 2px #494e3f;
+}
+.nav-item1 {
+    border-right: solid 0px #494e3f;
+    text-shadow: 2px 2px #494e3f;
+}
+.category{
+    color: black;
+    box-shadow: #86926f 0px 2px 0px 0px;
+}
+
+#main{
+    background-color: #a4af8d;
+    width: 70%;
+    margin: 0;
+    justify-content: center;
+    align-self: center;
+    box-shadow: #5f694b 0px 0px 10px 1px;
+    z-index: 2;
+}
+#align{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-image: url("Slike/pattern.jpg");
+    position: relative; /* Dodano */
+    overflow: hidden;
+}
+#align::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.containern {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 200px;
+    text-align: center;
+}
+
+
+.news-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#login{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    text-shadow: 2px 2px #494e3f;
+}
+
+.news-item {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.news-item h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.news-item p {
+    margin: 10px 0;
+}
+.ml-auto{
+    align-items: right;
+    align-self: right;
+    justify-content: right;
+}
+.logins{
+    visibility: hidden;
+    text-shadow: 2px 2px #494e3f;
+}
+footer {
+    background-color: #5f694b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (min-width: 995x) and (max-width: 1840px) {
+    .logins{
+        visibility: visible;
+    }
+    #login{
+        visibility: hidden;
+    }
+    .nav-item1 {
+        border-right: solid 1px #494e3f;
+    }
+    .nav-item2 {
+        border-right: solid 0px #494e3f;
+    }
+}
+
+@media (max-width: 994px) {
+    nav {
+        flex-direction: column;
+    }
+    .logins{
+        visibility: visible;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+    .container {
+        padding: 10px;
+    }
+    .news-grid {
+        flex-direction: column;
+    }
+    .news-item {
+        min-width: 100%;
+    }
+    #main{
+        width: 90%;
+    }
+    .containern{
+        padding-left: 0px;
+    }
+    #login{
+        display: none;
+    }
+    .nav-item{
+        border-right:0px;
+        border-bottom: solid 1px #494e3f ;
+    }
+    .nav-item1 {
+        border-right: 0px;
+        border-bottom: solid 1px #494e3f ;
+    }
+    .nav-item2 {
+        border-right: 0px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+    }
+    .logins{
+        visibility: visible;
+    }
+    .news-item h3 {
+        font-size: 18px;
+    }
+    .news-item p {
+        font-size: 14px;
+    }
+    #main{
+        width: 85%;
+    }
+    .containern{
+        padding-left: 0px;
+    }
+    #login{
+        display: none;
+    }
+    .nav-item{
+        border-right:0px;
+        border-bottom: solid 1px #494e3f ;
+    }
+    .nav-item1 {
+        border-right: 0px;
+        border-bottom: solid 1px #494e3f ;
+    }
+    .nav-item2 {
+        border-right: 0px;
+    }
+}

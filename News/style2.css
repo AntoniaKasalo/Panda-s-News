@@ -1,0 +1,128 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container.my-4 {
+    height: auto;
+}
+.prim{
+    background-color: #f7ec8d;
+    color: black;
+    border: #f7ec8d;
+}
+.prim:hover{
+    background-color:#c7ba4a ;
+}
+
+/* Boja gumba kada je pritisnut (aktivno stanje) */
+.prim:active {
+    background-color: #c7ba4a; /* Tamnija plava boja */
+    border-color: #c7ba4a;
+    box-shadow: 0 0 5px 0.2em rgba(255, 255, 255, 0.5);
+}
+
+button a{
+    color: white;
+    
+}
+button a:hover{
+    text-decoration: none;
+    color: black;
+}
+#main {
+    background-color: #a4af8d;
+    width: 70%;
+    margin: 0 auto;
+    height: 695px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #5f694b 0px 0px 10px 1px;
+    z-index: 2;
+}
+
+#align {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-image: url("Slike/pattern.jpg");
+    position: relative;
+    overflow: hidden;
+}
+
+#align::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header, footer {
+    background-color: #5f694b;
+    color: white;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #5f694b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+button{
+    box-shadow: #7b8579 2px 2px 3px 1px ;
+}
+nav{
+    background-color: #5f694b;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #f7ec8d;
+    text-decoration: underline;
+}
+.card{
+    margin-top: 50px;
+}
+.card-body {
+    background-color: #f9f9f9;
+}
+
+.card-img-bottom {
+    height: 200px;
+    object-fit: cover;
+}
+
+.form-control, .form-control-file {
+    margin-bottom: 10px;
+}
+
+@media (max-width:1840){
+    #main{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .form-container {
+        flex-direction: column;
+    }
+    #main{
+        height: auto;
+    }
+}

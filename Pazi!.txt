@@ -1,0 +1,1 @@
+Pazi da je lozinka za povezivanje s bazom promjenjena u file-u na vasu lozinku i s time da imate stvorenu bazu s svim tablicama! :)
